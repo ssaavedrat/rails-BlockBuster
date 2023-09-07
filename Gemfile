@@ -76,3 +76,7 @@ gem "faker", "~> 2.23"
 gem "cssbundling-rails", "~> 1.1"
 
 gem "jsbundling-rails", "~> 1.0"
+
+gem "annotate", "~> 3.2"
+
+gem "rails_live_reload", "~> 0.3.4"
