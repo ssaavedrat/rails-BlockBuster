@@ -43,10 +43,53 @@ Este repositorio contiene el desafío "Relaciones 1 a N en los modelos", que tie
 
 * Agregamos estilos varios a la aplicación, utilizando bootstrap.
 
-* Desplegamos la aplicación en Heroku.
+## Despliegue en Heroku
 
-  ```bash	
-  heroku login
-  heroku create blockbuster
-  git push heroku main
-  
+1. Crea una cuenta en Heroku si aún no tienes una.
+
+2. Instala el cliente de Heroku en tu máquina local.
+
+3. Inicia sesión en Heroku desde la terminal:
+
+   ```bash
+   heroku login
+   ```
+
+4. Crea una nueva aplicación en Heroku:
+
+   ```bash
+   heroku create blockpeliculas
+   ```
+
+5. Commit y push los cambios en git:
+
+   ```bash
+   git add .
+   git commit -m "Deploy to Heroku"
+   git push origin main
+   ```
+
+6. Despliega la aplicación en Heroku:
+
+   ```bash
+   git push heroku main
+   ```
+
+7. En Heroku, se debe agregar el complemento "Heroku Postgres" para la base de datos.
+
+8. Ejecuta las migraciones en Heroku y crea los datos de prueba:
+
+   ```bash
+   heroku run rails db:migrate
+   heroku run rails db:seed
+   ```
+
+9. Abre la aplicación en tu navegador:
+
+   ```bash
+   heroku open
+   ```
+
+¡Felicitaciones! Si has seguido todos los pasos, deberías ver la aplicación desplegada en Heroku.
+
+![Alt text](image.png)
