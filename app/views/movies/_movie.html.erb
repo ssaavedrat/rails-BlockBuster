@@ -1,9 +1,14 @@
 
   <div class="col-4 py-2">
     <div class="card">
-      <div class="card-body">
-        <h5 class="card-title"><%= movie.name %></h5>
+      <div class="card-body text-center">
+        <h5 class="card-title mt-3"><%= movie.name %></h5>
         <%= link_to "Show this movie", movie, class: "btn btn-primary" %>
+        <%# Show client if exist%>
+          <% if movie.client != nil %>
+            <p class="card-text"> <strong> Rented by: </strong> <%= movie.client.name %></p>
+          <% end %>
       </div>
+
     </div>
   </div>

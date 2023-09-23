@@ -9,5 +9,10 @@
 #  updated_at :datetime         not null
 #
 class Client < ApplicationRecord
-  has_many :movies
+  # allow destroy client and set movie client_id to nil
+  has_many :movies, dependent: :nullify
+
+  def to_s
+    self.name
+  end
 end

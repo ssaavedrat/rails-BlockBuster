@@ -1,8 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
-<div class="container">
+<div class="container my-3">
   <h1>Movies</h1>
-  <%= link_to "New movie", new_movie_path %>
+  <%= button_to "New movie", new_movie_path, method: :get, class: "btn btn-primary mt-3 mb-1" %>
+
   <div id="movies">
     <div class="row">
       <% @movies.each do |movie| %>

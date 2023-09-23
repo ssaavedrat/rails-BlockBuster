@@ -6,11 +6,15 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-100.times do
+puts("Creating movies...")
+
+30.times do
   Movie.create!([
     { name: Faker::Movie.title }
   ])
 end
+
+puts("Creating clients...")
 
 10.times do
   Client.create!([

@@ -1,12 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<div class="container">
+<div class="container my-3">
+
   <h1>Clients</h1>
 
-  <%= link_to "New client", new_client_path %>
+  <%= button_to "New client", new_client_path, method: :get, class: "btn btn-primary mt-3 mb-1" %>
+
 
   <div id="clients">
-    <table class="table table-bordered">
+    <table class="table table-bordered text-center table-hover">
       <thead>
         <tr>
           <th scope="col">#</th>
