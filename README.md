@@ -44,3 +44,9 @@ Este repositorio contiene el desafío "Relaciones 1 a N en los modelos", que tie
 * Agregamos estilos varios a la aplicación, utilizando bootstrap.
 
 * Desplegamos la aplicación en Heroku.
+
+  ```bash	
+  heroku login
+  heroku create blockbuster
+  git push heroku main
+  
